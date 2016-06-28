@@ -13,11 +13,11 @@
 }
 #header-site-help
 {
-    background: url('../images/black_help.png') no-repeat scroll left top transparent;
+    background: url('../images/ui/images/black_help.png') no-repeat scroll left top transparent;
 }
 #header-site-logOut
 {
-    background: url('../images/black_logOut.png') no-repeat scroll left top transparent;
+    background: url('../images/ui/images/black_logOut.png') no-repeat scroll left top transparent;
 }
 
 #statusPro
@@ -38,15 +38,15 @@
 }
 #footer-site-help
 {
-    background: url('../images/white_help.png') no-repeat scroll left top transparent;
+    background: url('../images/ui/images/white_help.png') no-repeat scroll left top transparent;
 }
 #footer-systemReg
 {
-    background: url('../images/white_systemReq.png') no-repeat scroll left top transparent;
+    background: url('../images/ui/images/white_systemReq.png') no-repeat scroll left top transparent;
 }
 #footer-termsOfUse
 {
-    background: url('../images/white_termOfUse.png') no-repeat scroll left top transparent;
+    background: url('../images/ui/images/white_termOfUse.png') no-repeat scroll left top transparent;
 }
 
 /* START: Common Form */
@@ -350,7 +350,7 @@ div.uploadFileContainer span.test {
 input.dateInput
 {
 	width: 120px;
-	background: white url(../images/calendar_icon.png) right no-repeat;
+	background: white url(../images/ui/images/calendar_icon.png) right no-repeat;
 	padding-right: 17px;
 }
 input.dollarAmount

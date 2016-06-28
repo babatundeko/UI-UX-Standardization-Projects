@@ -10374,7 +10374,7 @@ table tr:nth-child(even) {
 
 /*display background image header banner  */
 #page-header {
-	background: white url("../../images/header-bg.png") 135px 22px repeat;
+	background: white url(../images/intranet/header-bg.png) 135px 22px repeat;
 }
 
 /*
@@ -12232,7 +12232,7 @@ tr.selected td {
 	.icons-phone-white, .icons-plus-gray, .icons-plus-white,
 	.icons-print-blue, .icons-twitter-white, .icons-youtube {
 	background:
-		url(../../images/icons-s6077a1a31b.png)
+		url(../images/icons-s6077a1a31b.png)
 		no-repeat;
 }
 
@@ -13129,7 +13129,7 @@ ul.green i.triangle {
 	.lt-ie9 .tb-megamenu .views-exposed-form input[type=text], .lt-ie9 #top-container form[id^="views-exposed-form"] .views-exposed-form input[type=text]
 	{
 	background: white
-		  url(../../images/search-box-bg.png)
+		  url(../images/search-box-bg.png)
 		left top no-repeat;
 	border-right: 34px solid transparent;
 	padding-right: 10px;
