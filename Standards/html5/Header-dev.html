@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
 
 <title>NHLBI Clinical Dashboard Header Standard</title>
 
@@ -8,11 +9,11 @@
 <link rel="stylesheet" href="../jquery/jquery-ui-1.10.3.custom/css/smoothness/jquery-ui-1.10.3.custom.min.css" type="text/css"  ></link>
 <link rel="shortcut icon" href="http://www.nhlbi.nih.gov/favicon.ico" type="image/x-icon" />
 
-<link rel="stylesheet" href="../css/enterprise-1.css" type="text/css" /></link>
-<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.css">
+<link rel="stylesheet" href="../css/enterprise-2.css" type="text/css" /></link>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> <!--Bootstrap -->
+<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.css"> <!-- Font Awesome -->
+<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.min.css">
 
-<!-- use if neccessary  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"> -->
 
 <!-- screen styles for printing -->
 <!--<link rel="stylesheet" media="print" href="../css/enterprise-1.css"/>-->
@@ -61,6 +62,7 @@
 
 <link rel="stylesheet" href="../DataTables/media/css/jquery.dataTables_themeroller.css" type="text/css"></link>
 <link rel="stylesheet" href="../css/common.css" />
+
 <!-- use if neccessary
 <link rel="stylesheet" href="../css/lookup.css" />
 <link rel="stylesheet" href="../css/jquery.multiselect.css" /> 
@@ -103,7 +105,19 @@ function myFunction() {
 </script>
 
 
-<!-- Text sizer  -->
+<!-- pop up window for Help Topic -->
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=600,width=750,location=yes,scrollbars=yes,left=10,top=10,resizeable=yes,menubar=0');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+
+<!-- end pop up window for Help Topic -->
 
 
 </head>
@@ -113,17 +127,25 @@ function myFunction() {
 <div id="container">
 
 
-<!-- Alert -->		
-<header id="alert">
+<!-- Alert Banner -->		
+<header id="banner">
            
-<div id="" class="alert-banner-level-one">
+           
+<div id="banner" class="banner-red"> <!-- pick red, yellow or green -->
 
-<div id="" class="alert-banner-level-two">&nbsp;<a href="#" style="color: #fff;"><i class="fa fa-warning"></i>&nbsp;ALERT&nbsp;&nbsp;</a></div>
+<div id="" class="alert-red"> <!--  pick red, yellow or green -->
+<h3 class="banner-heading-red">
+<a href="#" class="banner-heading-link" aria-label="warning sign icon">
+<i class="fa fa-warning" aria-hidden="true"></i>&nbsp;ALERT&nbsp;&nbsp;</a></h3>
+</div>
 
-<div id="" class="alert-banner-level-three">&nbsp;&nbsp;NHLBI TPS Report System Offline for Update Friday, 6/3, 12:00 AM to 5:00 AM.&nbsp;<a href="">
-<i class="fa fa-info-circle alert-banner"></i></a></div>
+<div id="" class="banner-content-inside">
+<p class="banner-content-write">&nbsp;&nbsp;NHLBI TPS Report System Offline for Update Friday, 6/3, 12:00 AM to 5:00 AM.&nbsp;<a href="#" aria-label="information sign icon">
+<i class="fa fa-info-circle banner-icon-red" aria-hidden="true"></i></a></p> <!--  pick red, yellow or green -->
+</div>
 
-</div>  
+</div>
+
 </header>
 <!-- Alert end -->
   
@@ -137,7 +159,7 @@ function myFunction() {
         
 			<div id="name-and-slogan" class="headersize">
          
-			<h1 id="site-name"> <a href="/" title="Home" rel="home">NHLBI <span>Clinical Dashboard - BETA</span></a></h1>
+			<h1 id="site-name"> <a href="" title="Home" id="" rel="home">NHLBI <span>Clinical Dashboard - BETA</span></a></h1>
         
         	</div>
             
@@ -145,6 +167,7 @@ function myFunction() {
   
     		</div>
 	
+     
     
     <div class="row">
     
@@ -153,7 +176,7 @@ function myFunction() {
             <div id="header-links">
 				
                 <nav id="secondary-menu" role="">
-				Welcome <span>Babatunde, Kazeem (NIH/NHLBI) [E]</span> <a id="header-site-logOut" href="saml/logout?local=true">Log Out</a>
+				Welcome <span>Babatunde, Kazeem (NIH/NHLBI) [E]</span> &nbsp;&nbsp;<a href="#" class="fa fa-sign-out fa-lg" aria-label="log out icon" style="color:#000000;text-decoration:none;" title="Log Out"></a><a href="#" style="color:#000000;text-decoration:none;">Log Out</a>
 				</nav>
 
                 
@@ -177,13 +200,13 @@ function myFunction() {
 			
             <div id="header-links">
 				
-                <nav id="secondary-menu" role="navigation" style="">
+                <nav id="secondary-menu" role="navigation" style="margin-top:;">
                 
 					<div  class="section-support">
                  
 <p>         
-<a href="#" title="Print" onclick="myFunction()" style="color:#c0143c;"><i class="fa fa-print fa-lg"></i></a> &nbsp;
-<a href="#" title="Share" style="color: #c0143c;"><i class="fa fa-share"  aria-hidden="true"></i></a>
+<a href="Header-dev.html" onclick="myFunction()" style="color:#c0143c;" aria-label="print icon"><i class="fa fa-print fa-lg" title="print" aria-hidden="true"></i></a>
+<!-- <a href="#" title="Share" style="color: #c0143c;"><i class="fa fa-share"  aria-hidden="true"></i></a> --> 
 <a value="Reset" title="A Reset" ONCLICK="zoomin(1.0);" class="zoom-size-small">A</a>
 <a value="Reset" title="A Medium" ONCLICK="zoomin(1.15);" class="zoom-size-medium">A</a>
 <a value="Reset" title="A Larger" ONCLICK="zoomin(1.3);" class="zoom-size-larger">A</a>
@@ -191,7 +214,7 @@ function myFunction() {
        
                     </div>
 			   	</nav>
-     
+   
 				<div class="clearfix"></div>
                 
 			</div>
@@ -200,14 +223,18 @@ function myFunction() {
         
 	</div>
     
-</div>
+  
+    
+  
 <!-- Zoom size, print and share - end -->
 
 
 </header>
 
+<!-- end header field -->
 
 
+<!-- Begin nav -->
 <header id="navigation">
 
 <div id="navigation"  style="z-index:5;">
@@ -219,6 +246,7 @@ function myFunction() {
                         <ul  class="tb-megamenu-nav nav">
                         
                         <li class="main-menu-a mega-align-left dropdown"> <!-- add active in class to create active menu tab -->
+  
   
   <a href="" class="dropdown-toggle">
   <span class="headline-menutitle">Clinical Dashboard</span> <span class="caret"></span>
@@ -253,7 +281,7 @@ function myFunction() {
         </li>
 
 		<li>
-        <a href="" class="" value="Close this window" onclick="windowClose();"> Exit to MyNHLBI </a>
+        <a href="#">Exit Clinical Dashboard</a>
         </li>
   
 </ul>
@@ -268,11 +296,11 @@ function myFunction() {
         </li>
                             
 		<li  class="main-menu-c">
-		<a href="" class="dropdown-toggle">Upload <span class="caret"></span></a>
+		<a href="" class="dropdown-toggle">Register Study<span class="caret"></span></a>
         </li>
 	
     	<li  class="main-menu-e">
-        <a href="" class="dropdown-toggle">Registration <span class="caret"></span></a>
+        <a href="" class="dropdown-toggle">Search <span class="caret"></span></a>
         </li>
 
 		<li  class="main-menu-f mega-align-right dropdown">
@@ -298,11 +326,11 @@ function myFunction() {
 		<div id="custom-search-menu-help-input" class="views-exposed-form">
         
 		<div class="input-group col-md-12">
-		<input type="text" class="search-menu-help-query form-control" placeholder="" />
+		<input type="text" class="search-menu-help-query form-control" placeholder="" / aria-label="input field" aria-hidden="true">
                                
 		<span id="custom-remove-menu-help-input">
-		<button class="btn btn-primary" type="button" id="" value="Remove">
-        <a href="" class="icon-remove search-help-icon-button"></a>	
+		<button class="btn btn-primary" type="button" id="" value="Remove" aria-label="button icon" aria-hidden="true">
+        <a href="" class="icon-remove search-help-icon-button" aria-label="search icon" aria-hidden="true"></a>	
         </button>
 		</span>
                 
@@ -315,19 +343,19 @@ function myFunction() {
     
 
 		<li>
-        <a href="" type="button" class="" data-toggle="modal" data-target="#modalHelp">Browse Clinical Dashboard User Guide </a>
+       <a href="popupex.html" onclick="return popitup('popupex.html')">Browse Clinical Dashboard User Guide </a>
         </li>
 
 		<li>
-        <a href="" type="button" class="" data-toggle="modal" data-target="#modalStarted"> Get Started with Clinical Dashborad </a>
+        <a href="" type="button" class="" data-toggle="modal" data-target="#modalStarted"> Get Started with Clinical Dashboard </a>
         </li>
 
 		<li>
-        <a href="" class=""> Contact IT Service Now </a>
+        <a href="https://myitsm.nih.gov/navpage.do" target="_blank" class=""> Contact IT Service Desk </a>
         </li>
     
 		<li>
-        <a href="" class=""> Send Feedback about Clinical Dashboard </a>
+        <a href="" class=""> Send Feedback about Clinical Dashboard </a> <!-- Set up Feedback in Jira and add the url link in link tag --> 
         </li>
   
 		</ul>
@@ -349,32 +377,791 @@ function myFunction() {
 </div>
 
 </header>
+<!-- End nav--> 
 
-
-
-
+<!--optional breadcrumb -->
+<!-- begin breadcrumb --> 
 <header id="breadcrumb">
            
   <ol class="breadcrumb">
-    <li><a href="#" title="Home"><i class="fa fa-home fa-lg"></i></a></li>
+    <li><a href="#" title="Home" aria-label="home icon"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
     <li><a href="#" id="breadcrumb-link" style="">Optional Breadcrumbs</a></li>
     <li><a href="#" id="breadcrumb-link">Show Users</a></li>
-    <li><a href="#" id="breadcrumb-link">Where Are They</a></li>
+    <li><a href="#" id="breadcrumb-link">Where They Are</a></li>
     <li id="breadcrumb-link" class="active">In The Workflow</li>        
   </ol>
 
 </header>
-	
+	<!-- end breadcrumb --> 
+
     
-    
-    	
+   
+<!-- begin body content -->     	
 <section id="content">
 	
     <div class="row">
     
 		<div class="col-sm-16">    
 
-            <h1>Clinical Trials</h1>   
+            <h1>Clinical Trials</h1> 
+            
+        
+            
+            
+            <h2> Visual Style</h2>
+            
+            
+            <h3>Header</h3>
+            
+     
+            
+            <h1>H1 Arial, Sans-serif 30pt/30px bold</h1>
+         
+            <h2>H2 Arial, Sans-serif 18pt/18px bold</h2>
+    
+            <h3>H3 Arial, Sans-serif 16pt/16px semibold</h3>
+            
+            <h4>H4 Arial, Sans-serif 15pt/15px semibold</h4>
+       
+          <h5>H5 Arial, Sans-serif 14pt/14px regular</h5>
+     
+            <h6>H6 Arial, Sans-serif 14pt/14px italic</h6>
+            
+        <h2>Icons</h2>
+        
+        <h2>Lists</h2>
+        
+   
+
+      <h4 class="">Unordered list</h4>
+
+      <ul>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+      </ul>
+
+      <h4 class="">Ordered list</h4>
+
+      <ol>
+        <li>Ordered list item</li>
+        <li>Ordered list item</li>
+        <li>Ordered list item</li>
+      </ol>
+
+  
+
+  
+  <h2>Color</h2>
+  
+<div id="tab_2" class="tab-pane active">  
+  
+<div class="box box-default color-palette-box">
+
+ <!-- title display --> 
+<div class="box-header with-border"> 
+<h3><i class="fa fa-tag"></i> Color Palette</h3>
+
+
+</div>
+
+<!-- color box display --> 
+<div class="box-body"> 
+
+<!-- section row 1 -->
+<div class="row">
+
+<h5><i class=""></i> Basic Colors</h5>
+
+<!--color box 1 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">Black</h4>
+
+<div class="color-palette-set">
+
+<!-- Group Black Color -->
+<div class="bg-light-black disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-black color-palette">	<span>#000000</span>	</div>
+<div class="bg-light-black-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+<!--color box 2 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">NIH Gray</h4>
+
+<div class="color-palette-set">
+
+<!-- Group NIH Gray Color -->
+<div class="bg-light-gray disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-gray color-palette">	<span>#616265</span>	</div>
+<div class="bg-light-gray-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+<!--color box 3 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">Light Gray</h4>
+
+<div class="color-palette-set">
+
+<!-- Group Light Gray Color -->
+<div class="bg-light-lightgray disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-lightgray color-palette">	<span>#b2b3b2</span>	</div>
+<div class="bg-light-lightgray-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+<!--color box 4 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">White</h4>
+
+<div class="color-palette-set">
+
+<!-- Group White Color -->
+<div class="bg-light-white disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-white color-palette">	<span>#ffffff</span>	</div>
+<div class="bg-light-white-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+
+ 
+ </div>
+ 
+ 
+
+<!-- section row 2 -->
+<div class="row">
+
+<h5><i class=""></i> Access Colors</h5>
+
+<!--color box 1 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">Navy Blue</h4>
+
+<div class="color-palette-set">
+
+<!-- Group Blue Color -->
+<div class="bg-light-blue disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-blue color-palette">	<span>#14284b</span>	</div>
+<div class="bg-light-blue-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+<!--color box 2 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">NIH Purple</h4>
+
+<div class="color-palette-set">
+
+<!-- Group Purple Color -->
+<div class="bg-light-purple disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-purple color-palette">	<span>#6c3a77</span>	</div>
+<div class="bg-light-purple-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+<!--color box 3 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">NIH Blue</h4>
+
+<div class="color-palette-set">
+
+<!-- Group NIH Blue Color -->
+<div class="bg-light-nihblue disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-nihblue color-palette">	<span>#20558a</span>	</div>
+<div class="bg-light-nihblue-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+<!--color box 4 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">Teal</h4>
+
+<div class="color-palette-set">
+
+<!-- Group Teal Color -->
+<div class="bg-light-teal disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-teal color-palette">	<span>#005f71</span>	</div>
+<div class="bg-light-teal-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+
+ 
+ </div>
+ 
+ 
+ <!-- section row 3 -->
+<div class="row">
+
+<!--color box 1 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">NIH Red</h4>
+
+<div class="color-palette-set">
+
+<!-- Group Red Color -->
+<div class="bg-light-red disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-red color-palette">	<span>#c0143c</span>	</div>
+<div class="bg-light-red-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+<!--color box 2 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">NIH Green</h4>
+
+<div class="color-palette-set">
+
+<!-- Group Green Color -->
+<div class="bg-light-green disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-green color-palette">	<span>#719500</span>	</div>
+<div class="bg-light-green-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+<!--color box 3 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">NIH Orange</h4>
+
+<div class="color-palette-set">
+
+<!-- Group NIH Orange Color -->
+<div class="bg-light-orange disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-orange color-palette">	<span>#e57200</span>	</div>
+<div class="bg-light-orange-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+<!--color box 4 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">NIH Light Blue </h4>
+
+<div class="color-palette-set">
+
+<!-- Group NIH Light Blue Color -->
+<div class="bg-light-nihlightblue disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-nihlightblue color-palette">	<span>#5f9baf</span>	</div>
+<div class="bg-light-nihlightblue-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+
+
+<!--color box 4 -->
+<div class="col-sm-4 col-md-2">
+
+<h4 class="text-center">Warm Yellow </h4>
+
+<div class="color-palette-set">
+
+<!-- Group Warm Yellow Color -->
+<div class="bg-light-warmyellow disabled color-palette">	<span>Disabled</span>	</div>
+<div class="bg-light-warmyellow color-palette">	<span>#ffb819</span>	</div>
+<div class="bg-light-warmyellow-active color-palette">	<span>Active</span>	</div>
+
+</div>
+
+</div>
+
+
+
+ 
+ </div>
+ 
+ 
+ 
+ </div>
+ 
+ </div>
+ 
+ </div>
+ 
+
+  
+        
+        <h2>Links</h2>
+        
+        <p><a href="#">This</a> is a text link on a light background.</p>
+
+  <p><a class="visited" href="#">This</a> is a visited link.</p>
+
+  <p>This is a link that goes to an <a class="fa fa-external-link" aria-hidden="true href">external website</a>.</p>
+
+  <div class="dark">
+    <p><a href="#">This</a> is a text link on a dark background.</p>
+  </div>
+  
+  
+        
+        <h2>Icons</h2>
+        
+        
+        
+        
+     <h3>Glyphicons</h3>
+     
+<div class="">
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+</div>
+     
+     
+     
+     
+     <h3>Font Awesome</h3>
+     
+     <div class="">
+     
+
+
+<i class="fa fa-check"></i>
+<i class="fa fa-arrow-up"></i>
+<i class="fa fa-arrow-down"></i>
+<i class="fa fa-calendar"></i>
+<i class="fa fa-chevron-right"></i>
+<i class="fa fa-chevron-left"></i>
+<i class="fa fa-chevron-up"></i>
+<i class="fa fa-chevron-down"></i>
+<i class="fa fa-times"></i>
+<i class="fa fa-cc"></i>
+<i class="fa fa-minus-square"></i>
+<i class="fa fa-plus-square"></i>
+<i class="fa fa-external-link"></i>
+<i class="fa fa-cog"></i>
+<i class="fa fa-question-circle"></i>
+<i class="fa fa-info-circle"></i>
+<i class="fa fa-home"></i>
+<i class="fa fa-envelope"></i>
+<i class="fa fa-file-pdf-o"></i>
+<i class="fa fa-print"></i>
+<i class="fa fa-plus"></i>
+<i class="fa fa-refresh"></i>
+<i class="fa fa-download"></i>
+<i class="fa fa-search"></i>
+<i class="fa fa-paper-plane"></i>
+<i class="fa fa-sign-out"></i>
+<i class="fa fa-sign-in"></i>
+<i class="fa fa-sort"></i>
+<i class="fa fa-sort-asc"></i>
+<i class="fa fa-sort-desc"></i>
+<i class="fa fa-sort-numberic-desc"></i>
+<i class="fa fa-sort-numberic-asc"></i>
+<i class="fa fa-sort-alpha-asc"></i>
+<i class="fa fa-sort-alpha-desc"></i>
+<i class="fa fa-clock-o"></i>
+<i class="fa fa-asterisk"></i>
+<i class="fa fa-check-square"></i>
+<i class="fa fa-exclamation-triangle"></i>
+<i class="fa fa-filter"></i>
+<i class="fa fa-bars"></i>
+<i class="fa fa-spinner"></i>
+<i class="fa fa-file-excel-o"></i>
+<i class="fa fa-file-word-o"></i>
+<i class="fa fa-save"></i>
+
+ 
+
+
+
+
+
+
+</div>
+           
+            
+            
+            
+          <h2>Button </h2>
+           
+           <button>Default</button> 
+           <a class="" href="/">My button</a>
+           
+           
+           <h2> Tables</h2>
+           
+           <table>
+    <thead>
+      <tr>
+        <th scope="col">Document title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <th scope="row">Pellentesque scelerisque </th>
+        <td>SPellentesque scelerisque aliquam libero ac posuere. Etiam ornare, lorem ut ultrices eleifend.</td>
+        <td>####</td>
+      </tr>
+      
+        <tr class="even">
+        <th scope="row">Pellentesque scelerisque </th>
+        <td>SPellentesque scelerisque aliquam libero ac posuere. Etiam ornare, lorem ut ultrices eleifend.</td>
+        <td>####</td>
+      </tr>
+      
+        <tr class="odd">
+        <th scope="row">Pellentesque scelerisque </th>
+        <td>SPellentesque scelerisque aliquam libero ac posuere. Etiam ornare, lorem ut ultrices eleifend.</td>
+        <td>####</td>
+      </tr>
+      
+        <tr class="even">
+        <th scope="row">Pellentesque scelerisque </th>
+        <td>SPellentesque scelerisque aliquam libero ac posuere. Etiam ornare, lorem ut ultrices eleifend.</td>
+        <td>####</td>
+      </tr>
+      </tbody>
+      </table>
+      
+      
+      
+      
+      <table>
+      
+      <thead>
+      
+      <tr role="row">
+      
+      <th class="" aria-label="">scelerisque</th>
+      <th class="" aria-label="">scelerisque</th>
+      <th class="" aria-label="">scelerisque</th>
+      <th class="" aria-label="">scelerisque</th>
+      <th class="" aria-label="">scelerisque</th>
+      
+      </tr>
+      
+      </thead>
+      
+      <tbody>
+      
+      <tr class="odd" role="row">
+      
+      <td class="">SPellentesque </td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      
+      </tr>
+      
+       <tr class="even" role="row">
+      
+     <td class="">SPellentesque </td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      
+      </tr>
+      
+            <tr class="odd" role="row">
+      
+      <td class="">SPellentesque </td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      
+      </tr>
+      
+       <tr class="even" role="row">
+      
+     <td class="">SPellentesque </td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      <td class="">SPellentesque</td>
+      
+      </tr>
+      
+      </tbody>
+      </table>
+      
+      
+      
+      
+        <h2>Alert</h2>
+       
+
+           
+<!-- Alert -->		
+<header id="banner">
+           
+<div id="banner" class="banner-red"> <!--  pick red, yellow or green -->
+
+<div id="" class="alert-red"> <!--  pick red, yellow or green -->
+<h3 class="banner-heading-red">
+<a href="#" class="banner-heading-link">
+<i class="fa fa-warning"></i>&nbsp;ALERT&nbsp;&nbsp;</a></h3>
+</div>
+
+<div id="" class="banner-content-inside">
+<p class="banner-content-write">&nbsp;&nbsp;NHLBI TPS Report System Offline for Update Friday, 6/3, 12:00 AM to 5:00 AM.&nbsp;<a href="#">
+<i class="fa fa-info-circle banner-icon-red"></i></a></p> <!--  pick red, yellow or green -->
+</div>
+
+</div>
+
+
+
+<br />
+
+<div id="banner" class="banner-yellow"> <!--  pick red, yellow or green -->
+
+<div id="" class="alert-yellow"> <!--  pick red, yellow or green -->
+<h3 class="banner-heading-yellow">
+<a href="#" class="banner-heading-link" style="color:#000;">
+<i class="fa fa-warning"></i>&nbsp;CAUTION&nbsp;&nbsp;</a></h3>
+</div>
+
+<div id="" class="banner-content-inside">
+<p class="banner-content-write">&nbsp;&nbsp;NHLBI TPS Report System Offline for Update Friday, 6/3, 12:00 AM to 5:00 AM.&nbsp;<a href="#">
+<i class="fa fa-info-circle banner-icon-yellow"></i></a></p> <!--  pick red, yellow or green -->
+</div>
+
+</div>
+
+
+<br />
+
+<div id="banner" class="banner-green"> <!--  pick red, yellow or green -->
+
+<div id="" class="alert-green"> <!--  pick red, yellow or green -->
+<h3 class="banner-heading-green">
+<a href="#" class="banner-heading-link">
+<i class="fa fa-warning"></i>&nbsp;ALL CLEAR&nbsp;&nbsp;</a></h3>
+</div>
+
+<div id="" class="banner-content-inside">
+<p class="banner-content-write">&nbsp;&nbsp;NHLBI TPS Report System Offline for Update Friday, 6/3, 12:00 AM to 5:00 AM.&nbsp;<a href="#">
+<i class="fa fa-info-circle banner-icon-green"></i></a></p> <!--  pick red, yellow or green -->
+</div>
+
+</div>
+
+
+</header>
+<!-- Alert end -->
+
+
+<h2>Application Button</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<!-- add button in this field -->
+</div>
+
+<div class="col-md-6">
+
+<div class="box">
+
+<div class="box-header">
+<h3 class="box-title">Application Button Display</h3>
+</div>
+
+<div class="box-body">
+<p>add the classes .btn.btn-app to an &lt;a&gt; tag to achieve the following:</p>
+
+<a class="btn btn-app"> <i class="fa fa-repeat"></i>Reset</a>
+<a class="btn btn-app"> <i class="fa fa-floppy-o"></i>Save</a>
+<a class="btn btn-app"> <i class="fa fa-check-square"></i>Submit</a>
+<a class="btn btn-app"> <i class="fa fa-bar-chart"></i>Status Change</a>
+<a class="btn btn-app"> <i class="fa fa-question-circle"></i>Help</a>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+<h2>Form controls</h2>
+
+<div class="row">
+
+<div class="col-md-6"></div>
+
+<div class="col-md-6">
+
+<div class="box box-warning">
+
+<div class="box-header with-border"><h3 class="box-title">Dropdown</h3></div>
+
+<div class="box-body">
+
+<form role="form">
+
+<div class="form-group">
+<label>Text</label>
+<input class="form-control" placeholder="Enter..." type="text" /></input>
+</div>
+
+<div class="form-group">
+<label>Select</label>
+<select class="form-control">
+<option>option 1</option>
+<option>option 2</option>
+<option>option 3</option>
+<option>option 4</option>
+<option>option 5</option>
+</select>
+</div>
+
+</form>
+</div>
+
+<!--
+<div class="form-group">
+<label>Checkbox</label>
+<div class="checkbox">
+<label><input type="checkbox" /></input> 
+Checkbox 1</label>
+</div>
+
+<div class="checkbox">
+<label><input type="checkbox" /></input> 
+Checkbox 2</label>
+</div>
+
+<div class="checkbox">
+<label><input type="checkbox" /></input> 
+Checkbox 3</label>
+</div>
+Issue with the lable return tag
+
+
+</div>-->
+
+
+</div>
+</div>
+
+
+
+
+<!--
+<form class="">
+  <label for="options">Dropdown label</label>
+  <select name="options" id="options">
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+  </select>
+</form>-->
+
+
+</div>
+
+
+
+<h3>Checkbox</h3>
+
+<fieldset class="">
+
+    <legend class="">Historical figures 1</legend>
+
+    <ul class="">
+      <li>
+        <input id="Name1" type="checkbox" name="Name-1" value="Name1" checked="">
+        <label for="Name1">Name 1</label>
+      </li>
+       <li>
+        <input id="Name2" type="checkbox" name="Name-2" value="Name2" checked="">
+        <label for="Name2">Name 2</label>
+      </li>
+       <li>
+        <input id="Name3" type="checkbox" name="Name-3" value="Name3" checked="">
+        <label for="Name3">Name 3</label>
+      </li>
+       <li>
+        <input id="Name4" type="checkbox" name="Name-4" value="Name4" checked="">
+        <label for="Name4">Name 4</label>
+      </li>
+      
+    </ul>
+
+  </fieldset>
+
+<h3>Radio Button</h3>
+
+<fieldset class="">
+
+    <legend class="">Radio Names</legend>
+
+    <ul class="">
+      <li>
+        <input id="Name1" type="radio" checked="" name="Name-1" value="Name1">
+        <label for="Name1">Name 1</label>
+      </li>
+      <li>
+        <input id="Name2" type="radio" checked="" name="Name-2" value="Name2">
+        <label for="Name2">Name 1</label>
+      </li>
+      <li>
+        <input id="Name3" type="radio" checked="" name="Name-3" value="Name3">
+        <label for="Name3">Name 3</label>
+      </li>
+    </ul>
+
+  </fieldset>
+
+
+<h3>Text input and area</h3>
+
+<label for="input-type-text">Text input label</label>
+<input id="input-type-text" name="input-type-text" type="text">
+
+
+        
+           
             
             
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada venenatis justo, non mattis leo rutrum sit amet. Phasellus tempor mollis nibh. Praesent ut nulla condimentum, iaculis purus at, gravida dui. Nulla facilisi. Aliquam sem magna, tempus eget nisl nec, ullamcorper congue neque. Pellentesque elementum nisl leo, quis porttitor libero mattis id. Vestibulum non felis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ac nisl vel mi ultrices semper. Maecenas convallis porttitor vulputate. Praesent fringilla aliquam quam, ut convallis est suscipit vitae. Ut feugiat a leo vel fermentum. Cras et risus elit.</p>
@@ -402,14 +1189,16 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
 		</div>
         
 		</section>
-    
+       
+<!-- end body content --> 
+   
 		</div>
 
 
 
 <!-- Modal - Get Started -->
 <!-- Modal HTML -->
-<div id="modalStarted" class="modal fade" aria-labelledby="Description for Get Started with Clinical Dashboard" style="background-color:#EBEBEB;" tabindex="-1">
+<div id="modalStarted" class="modal fade" aria-label="modal - Description for Get Started with Clinical Dashboard" aria-hidden="true" style="background-color:#EBEBEB;" tabindex="-1">
 
     <div class="modal-dialog">
         
@@ -417,7 +1206,7 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
 	<div class="modal-header">
 	<div class="white-modal-header">
    
-	<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button> 
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button> 
           
 	<h5 class="modal-title headerfive">Get Started with Clinical Dashborad</h5>
 	</div>
@@ -429,9 +1218,9 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
 	<div class="modal-body custom-height-modal">
 
 	<ul style="list-style:none">
-         <li><a href="">Manual (PDF)</a></li>
-         <li><a href="">Video tutorials</a> </li>
-         <li><a href="">Training Classes</a></li>
+         <li><a href="#">Manual (PDF)</a></li>
+         <li><a href="#">Video tutorials</a> </li>
+         <li><a href="#">Training Classes</a></li>
 	</ul>
 
 	</div>
@@ -446,7 +1235,7 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
 
 <!-- Modal - Help -->
  <!-- Modal HTML -->
-<div id="modalHelp" class="modal fade" aria-labelledby="Description for Help" style="background-color:#EBEBEB;" tabindex="-1">
+<div id="modalHelp" class="modal fade" aria-label="modal - Description for Help" aria-hidden="true" style="background-color:#EBEBEB;" tabindex="-1">
     <div class="modal-dialog">
         
 	<div class="modal-content" style="">
@@ -455,7 +1244,7 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
      
 	<div class="white-modal-header">
    
-	<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button> 
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button> 
 	<h5 class="modal-title headerfive">Clinical Dashboard Help</h5>
           
           
@@ -463,23 +1252,23 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
           
 	<div class="black-modal-header"> 
        
-	<button type="button" class="button-black-modal-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-	<button type="button" class="button-black-modal-right"><i class="fa fa-chevron-right" aria-hidden="true"></i> </button> 
+	<button type="button" class="button-black-modal-left"aria-label="button icon" aria-hidden="true"><i class="fa fa-chevron-left" aria-hidden="true" aria-label="arrow left icon"></i></button>
+	<button type="button" class="button-black-modal-right" aria-label="button icon" aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true" aria-label="arrow right icon"></i> </button> 
  
   	<div id="custom-search-input">
 	<div class="input-group col-md-12">
     
 	<span class="input-group-btn">	
-	<button class="btn btn-primary" type="button">
-	<i class="fa fa-search" aria-hidden="true"></i>
+	<button class="btn btn-primary" type="button" aria-label="button icon" aria-hidden="true">
+	<i class="fa fa-search" aria-hidden="true" aria-label="search icon"></i>
 	</button>
 	</span>
 	
-	<input type="text" class="search-query form-control" placeholder="Search" />
+	<input type="text" class="search-query form-control" placeholder="Search" aria-label="input field" aria-hidden="true" />
                                
 	<span id="custom-remove-input">
-	<button class="btn btn-primary" type="button" data-dismiss="modal">
-	<i class="fa fa-times"></i></button>
+	<button class="btn btn-primary" type="button" data-dismiss="modal" aria-label="button icon">
+	<i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button>
 					
 				
 	</span>
@@ -498,27 +1287,27 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
         
         <!-- This is Demo - This wil change to search custom box to dislay search result -->
 	<ul style="list-style:none; width:100px;">
-	   <li style="padding:5px 0px;"><a href="">Help Topic 1</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 2</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 3</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 4</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 5</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 6</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 7</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 8</a></li>
+	   <li style="padding:5px 0px;"><a href="#">Help Topic 1</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 2</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 3</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 4</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 5</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 6</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 7</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 8</a></li>
 	</ul>
 	</div>
          
 	<div class=""> 
 	<ul style="list-style:none; margin-top:-10px;">
-	   <li style="padding:5px 0px;"><a href="">Help Topic 9</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 10</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 11</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 12</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 13</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 14</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 15</a></li>
-       <li style="padding:5px 0px;"><a href="">Help Topic 16</a></li>
+	   <li style="padding:5px 0px;"><a href="#">Help Topic 9</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 10</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 11</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 12</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 13</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 14</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 15</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 16</a></li>
 	</ul>
 	</div>
 
@@ -533,7 +1322,7 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
 
 <!-- Modal - About Clinical Dashboard -->
  <!-- Modal HTML -->
-<div id="modalAbout" class="modal fade" aria-labelledby="Description for About Clinical Dashboard" style="background-color:#EBEBEB;" tabindex="-1">
+<div id="modalAbout" class="modal fade" aria-label="Description for About Clinical Dashboard" aria-hidden="true" style="background-color:#EBEBEB;" tabindex="-1">
     <div class="modal-dialog">
       
 	<div class="modal-content" style="">
@@ -542,7 +1331,7 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
      
 	<div class="white-modal-header">
    
-	<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button> 
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button> 
 	<h5 class="modal-title headerfive">About Clinical Dashboard </h5>
     
 	</div>
@@ -572,7 +1361,7 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
 
 <!-- Modal - Term of Use -->
  <!-- Modal HTML -->
-<div id="modalUse" class="modal fade" aria-labelledby="Description for Term of Use" style="background-color:#EBEBEB;" tabindex="-1">
+<div id="modalUse" class="modal fade" aria-label="modal - Description for Term of Use" aria-hidden="true" style="background-color:#EBEBEB;" tabindex="-1">
     <div class="modal-dialog">
         
     <div class="modal-content" style="">
@@ -581,7 +1370,7 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
      
 	<div class="white-modal-header">
    
-	<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button> 
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button> 
 	<h5 class="modal-title headerfive">Term of Use </h5>
       
 	</div>
@@ -589,10 +1378,10 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
 	<div class="modal-body custom-height-modal">
         
 	<ul style="list-style:none;">
-	   <li style="padding:5px 0px;"><a href="">Accessibility</a></li>
-       <li style="padding:5px 0px;"><a href="">Privacy</a></li>
-       <li style="padding:5px 0px;"><a href="">FOIA</a></li>
-       <li style="padding:5px 0px;"><a href="">OIG</a></li>
+	   <li style="padding:5px 0px;"><a href="http://www.nhlbi.nih.gov/about/contact/nhlbi508form" target="_blank">Accessibility <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+       <li style="padding:5px 0px;"><a href="http://www.nhlbi.nih.gov/about/contact/privacy" target="_blank">Privacy <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+       <li style="padding:5px 0px;"><a href="http://www.nhlbi.nih.gov/about/contact/foia" target="_blank">FOIA <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+       <li style="padding:5px 0px;"><a href="#">OIG <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
 	</ul>
 
 	</div>  
@@ -609,7 +1398,7 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
 
 <!-- System Requirement -->
  <!-- Modal HTML -->
-<div id="modalSystem" class="modal fade" aria-labelledby="Description for System Requirement" style="background-color:#EBEBEB;" tabindex="-1">
+<div id="modalSystem" class="modal fade" style="background-color:#EBEBEB;" tabindex="-1"  aria-label="modal - Description for System Requirement" aria-hidden="true">
     <div class="modal-dialog">
         
 	<div class="modal-content" style="">
@@ -617,7 +1406,7 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
      
 	<div class="white-modal-header">
    
-	<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button>
            
 	<h5 class="modal-title headerfive">System Requirement</h5>
                      
@@ -636,10 +1425,12 @@ Duis nec mauris in risus porta tincidunt eget sed ligula. Etiam vehicula metus u
 	<p>Google Chrome</p>
 
 	<p>Safari</p>
+    
+    <p><a href="supportedBrowsers.html" target="_blank">Additional Informaiton</a></p>
 
 	<br/>
         
-	<button type="button" class="test" data-dismiss="modal">Test My System</button> 
+	<button type="button" class="test" data-dismiss="modal" aria-label="button icon" aria-hidden="true">Test My System</button> 
   
 	</div>
  

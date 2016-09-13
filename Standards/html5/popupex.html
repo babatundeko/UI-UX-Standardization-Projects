@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NHLBI Clinical Dashboard Header Standard - PopUp Window</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="http://www.nhlbi.nih.gov/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="../css/enterprise-1.css" type="text/css" /></link>
+  <link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.css"> <!-- Font Awesome -->
+<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../DataTables/media/css/jquery.dataTables_themeroller.css" type="text/css"></link>
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+  
+
+
+<!-- modal window -->
+<script type="text/javascript">
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+
+<!-- To close the window. Work on Safari, not FF -->
+<script language="javascript" type="text/javascript"> 
+function close_window(url){
+    var newWindow = window.open('', '_self', ''); //open the current window
+    window.close(url);
+} 
+</script>
+
+<!-- pop up window for Help Topic -->
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=600,width=750,location=yes,scrollbars=yes,left=10,top=10,resizeable=yes,menubar=0');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+
+
+<!-- /// Place Web Analytics tracking code HERE - To collect data, you must copy and paste the Analytics tracking code into the source code on every web page you wish to track.//// -->
+
+
+</head>
+
+<body style="min-width:580px;overflow-x:hidden;">
+	
+<div id="container" class="gray-whole-body">
+
+
+<!-- Button and Search Field -->  
+<div class="row gray-pop-top ">
+
+<div class="col-xs-6 gray-pop-top-left ">
+
+<button type="button" class="btn btn-small fa fa-chevron-left popup-button" style="background-color:#DDD;"></button>
+<button type="button" class="btn btn-small fa fa-chevron-right popup-button"></button> 
+
+</div>
+
+<div class="col-xs-6 gray-pop-top-right">
+
+<div class="input-group popup-search-input">
+<input type="text" name="search" id="search" class="form-control" placeholder="Search" />
+<span class="input-group-addon" for="search">
+<i class="glyphicon glyphicon-search"></i>
+</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Large Gray Border -->
+<div class="row">
+
+<div class="col-xs-12 gray-extra-top">
+</div>
+
+</div>
+
+
+<!-- Title -->
+<div class="row">
+
+<div class="col-xs-12">
+
+<h1 class="help-topic-title">Clinical Dashboard Help</h1>
+
+</div>
+
+</div>
+
+
+<!-- Search body -->
+<div class="row pop-body">
+
+<div class="col-xs-12 modal-body pop-body-modal">
+
+      
+<!-- This is Demo - This wil change to search filter custom box to display search result -->
+<ul>
+<li class="popup-listing"><a href="" class="pdf">Editing a Document </a></li>
+<li class="popup-listing"><a href="" class="pdf">Approving a Request </a></li>
+<li class="popup-listing"><a href="" class="pdf">Saving Your Work </a></li>
+<li class="popup-listing"><a href="" class="pdf">Using Accessibility Features </a></li>
+<li class="popup-listing"><a href="" class="pdf">Attaching Files </a></li>
+<li class="popup-listing"><a href="" class="pdf">Searching for Dcouments </a></li>
+<li class="popup-listing"><a href="" class="pdf">Sharing and Collaborating </a></li>
+</ul>
+
+</div>
+
+</div>
+
+
+    
+   
+
+
+<!-- Test the pagination 
+<div class="row">
+
+<div class="col-xs-12">
+
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+</div> 
+</div>-->
+            
+       
+     
+
+           
+            
+            
+            
+       
+  
+       
+   
+		</div>
+            
+		</div> 
+        
+		</section>
+       
+<!-- end body content --> 
+   
+		</div>
+
+
+
+</body>
+</html>

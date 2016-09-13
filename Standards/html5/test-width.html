@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<title>Clinical Dashboard Help</title>
+
+<meta charset="UTF-8" />
+
+<link rel="stylesheet" href="../jquery/jquery-ui-1.10.3.custom/css/smoothness/jquery-ui-1.10.3.custom.min.css" type="text/css"  ></link>
+<link rel="shortcut icon" href="http://www.nhlbi.nih.gov/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="../css/enterprise-4.css" type="text/css" /></link>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> <!--Bootstrap -->
+<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.css"> <!-- Font Awesome -->
+
+
+<!-- screen styles for printing -->
+<!--<link rel="stylesheet" media="print" href="../css/enterprise-1.css"/>-->
+
+
+
+<script type="text/javascript" src="../javascript/modernizr.min.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_1.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_2.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_3.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_4.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_5.js"></script>
+
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Add excape 'esc' button to close the modal -->
+<script type="text/javascript">
+
+    $(function () {
+        $('.modal-dialog').modal({
+            show: false,
+            keyboard: true,
+            backdrop: 'static'
+        });
+    })
+</script>
+<!-- modal window -->
+
+<link rel="stylesheet" href="../DataTables/media/css/jquery.dataTables_themeroller.css" type="text/css"></link>
+<link rel="stylesheet" href="../css/common.css" />
+
+<!-- use if neccessary
+<link rel="stylesheet" href="../css/lookup.css" />
+<link rel="stylesheet" href="../css/jquery.multiselect.css" /> 
+-->
+
+
+
+<!-- To close the window. Work on Safari, not FF -->
+<script language="javascript" type="text/javascript"> 
+function windowClose() { 
+window.open('','_parent',''); 
+window.close();
+} 
+</script>
+
+
+<!-- text size control --> 
+<script type="text/javascript">
+    function zoomin(zlevel) {
+        var _body = parent.parent.document.body;
+
+        if (jQuery.browser.msie) {
+            _body.style.zoom = zlevel;              
+        }
+        else
+        {
+            if (typeof _body.style.MozTransform == "string")    
+                _body.style.MozTransform = "scale(" + (zlevel) + ")";
+            else if (typeof _body.style.zoom == "string")
+                _body.style.zoom = (zlevel*100) + "%";              
+        }
+    }
+</script>
+
+<!-- print control --> 
+<script type="text/javascript">
+function myFunction() {
+    window.print();
+}
+</script>
+
+<!-- pop up window for Help Topic -->
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=200,width=150');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+
+</head>
+
+<body>
+	
+<div id="container" class="gray-whole-body">
+  
+
+
+
+    
+   
+<!-- begin body content -->     	
+<section id="content">
+	
+<div class="row">
+    
+<div class="col-sm-16">  
+
+
+
+<div class="row gray-pop-top">
+
+
+<div  class="gray-pop-top-left"> <!-- add grid issue - col-xs-12 col-md-8 -->
+<button type="button" class="button-black-modal-left btn "><i class="fa fa-chevron-left gray-icon-chevron" aria-hidden="true"></i></button>
+<button type="button" class="button-black-modal-right btn"><i class="fa fa-chevron-right gray-icon-chevron" aria-hidden="true"></i> </button> 
+ </div>
+ 
+         
+<div  class="gray-pop-top-right"> <!-- add grid issue - col-xs-6 col-md-4 --> 
+
+<form action="" method="get" id="" accept-charset="UTF-8">
+
+<div id="custom-search-input">
+<span class="input-group-btn">
+<button class="btn btn-primary" type="button">
+<i class="fa fa-search gray-icon-search" aria-hidden="true"></i>
+</button>
+</span>
+<input type="text" class="search-query form-control" placeholder="Search" />
+<span id="custom-remove-input">
+<button class="btn btn-primary" type="button" data-dismiss="modal">
+<i class="fa fa-times gray-icon-times"></i></button>
+</span>
+</div> 
+
+</form>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="row gray-extra-top ">
+
+</div>
+
+
+
+<div class="row gray-header-body" style="height:100%; max-height:100%;">
+
+<div class="help-topic-title">
+<h2>Clinical Dashboard Help</h2>
+</div>
+
+<div class=" modal-body pop-body-modal" style="max-height:;">
+
+<div class="" style=""> <!-- col-xs-6 --> 
+
+        
+        <!-- This is Demo - This wil change to search custom box to dislay search result -->
+	<ul style="list-style:none; width:500px; margin-left:3px;">
+	   <li style="padding:5px 0px;"><a href="">Editing a Document</a></li>
+       <li style="padding:5px 0px;"><a href="">Approving a Request</a></li>
+       <li style="padding:5px 0px;"><a href="">Saving Your Work</a></li>
+       <li style="padding:5px 0px;"><a href="">Using Accessibility Features</a></li>
+       <li style="padding:5px 0px;"><a href="">Attaching Files</a></li>
+       <li style="padding:5px 0px;"><a href="">Searching for Dcouments</a></li>
+       <li style="padding:5px 0px;"><a href="">Sharing and Collaborating</a></li>
+       <li style="padding:5px 0px;"><a href="">Help Topic 8</a></li>
+<li style="padding:5px 0px;"><a href="">Help Topic 9</a></li>
+       <li style="padding:5px 0px;"><a href="">Help Topic 10</a></li>
+       <li style="padding:5px 0px;"><a href="">Help Topic 11</a></li>
+       <li style="padding:5px 0px;"><a href="">Help Topic 12</a></li>
+       <!--<li style="padding:5px 0px;"><a href="">Help Topic 13</a></li>
+       <li style="padding:5px 0px;"><a href="">Help Topic 14</a></li>
+       <li style="padding:5px 0px;"><a href="">Help Topic 15</a></li>
+       <li style="padding:5px 0px;"><a href="">Help Topic 16</a></li>-->
+	</ul>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<!-- Test the pagination 
+<div class="row">
+
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+</div>
+
+    -->   
+       <!-- Modal - Help -->
+ <!-- Modal HTML -->
+
+<!-- End - Help -->   
+            
+       
+     
+
+           
+            
+            
+            
+       
+  
+       
+   
+		</div>
+            
+		</div> 
+        
+		</section>
+       
+<!-- end body content --> 
+   
+		</div>
+
+
+
+</body>
+</html>

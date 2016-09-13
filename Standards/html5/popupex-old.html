@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NHLBI Clinical Dashboard Header Standard - PopUp Window</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="http://www.nhlbi.nih.gov/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="../css/enterprise-1.css" type="text/css" /></link>
+  <link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.css"> <!-- Font Awesome -->
+<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../DataTables/media/css/jquery.dataTables_themeroller.css" type="text/css"></link>
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+  
+
+
+<!-- modal window -->
+<script type="text/javascript">
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+
+<!-- To close the window. Work on Safari, not FF -->
+<script language="javascript" type="text/javascript"> 
+function close_window(url){
+    var newWindow = window.open('', '_self', ''); //open the current window
+    window.close(url);
+} 
+</script>
+
+<!-- pop up window for Help Topic -->
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=600,width=750,location=yes,scrollbars=yes,left=10,top=10,resizeable=yes,menubar=0');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+
+
+<!-- Place Web Analytics tracking code HERE - To collect data, you must copy and paste the Analytics tracking code into the source code on every web page you wish to track. -->
+
+
+</head>
+
+<body style="min-width:580px;overflow-x:hidden;">
+	
+<div id="container" class="gray-whole-body">
+  
+
+
+
+    
+   
+<!-- begin body content -->     	
+<section id="content">
+	
+<div class="row popup-window">
+    
+<div class="col-sm-18">  
+
+
+
+<div class="row gray-pop-top" style="margin-left:20px; margin-top:-5px;">
+
+
+<div  class="gray-pop-top-left"> <!-- add grid issue - col-xs-12 col-md-8 -->
+<button type="button" class="button-black-modal-left btn "><i class="fa fa-chevron-left gray-icon-chevron" aria-hidden="true"></i></button>
+<button type="button" class="button-black-modal-right btn"><i class="fa fa-chevron-right gray-icon-chevron" aria-hidden="true"></i> </button> 
+ </div>
+ 
+         
+<div  class="gray-pop-top-right"> <!-- add grid issue - col-xs-6 col-md-4 --> 
+
+<form action="" method="get" id="" accept-charset="UTF-8">
+
+<div id="custom-search-input">
+<span class="input-group-btn">
+<button class="btn btn-primary" type="button">
+<i class="fa fa-search gray-icon-search" aria-hidden="true"></i>
+</button>
+</span>
+<input type="text" class="search-query form-control" placeholder="Search" />
+<span id="custom-remove-input">
+<button class="btn btn-primary" type="button" data-dismiss="modal">
+<i class="fa fa-times gray-icon-times"></i></button>
+</span>
+</div> 
+
+</form>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="row gray-extra-top ">
+
+</div>
+
+
+
+<div class="row gray-header-body" style="height:100%; max-height:100%;">
+
+<div class="help-topic-title">
+<h2>Clinical Dashboard Help</h2>
+</div>
+
+<div class=" modal-body pop-body-modal" style="max-height:;">
+
+<div class="" style=""> <!-- col-xs-6 --> 
+
+        
+        <!-- This is Demo - This wil change to search custom box to dislay search result -->
+	<ul class="popup-ul-col-1">
+	   <li class="popup-li-col-1"><a href="" class="pdf">Editing a Document </a></li>
+       <li class="popup-li-col-1"><a href="" class="pdf">Approving a Request </a></li>
+      <li class="popup-li-col-1"><a href="" class="pdf">Saving Your Work </a></li>
+       <li class="popup-li-col-1"><a href="" class="pdf">Using Accessibility Features </a></li>
+       <li class="popup-li-col-1"><a href="" class="pdf">Attaching Files </a></li>
+       <li class="popup-li-col-1"><a href="" class="pdf">Searching for Dcouments </a></li>
+       <li class="popup-li-col-1"><a href="" class="pdf">Sharing and Collaborating </a></li>
+  
+	</ul>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<!-- Test the pagination 
+<div class="row">
+
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+</div>
+
+    -->   
+       <!-- Modal - Help -->
+ <!-- Modal HTML -->
+
+<!-- End - Help -->   
+            
+       
+     
+
+           
+            
+            
+            
+       
+  
+       
+   
+		</div>
+            
+		</div> 
+        
+		</section>
+       
+<!-- end body content --> 
+   
+		</div>
+
+
+
+</body>
+</html>

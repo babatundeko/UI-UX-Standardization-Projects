@@ -1,0 +1,690 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+
+<title>NHLBI Clinical Dashboard Header Standard</title>
+
+<meta charset="UTF-8" />
+
+<link rel="stylesheet" href="../jquery/jquery-ui-1.10.3.custom/css/smoothness/jquery-ui-1.10.3.custom.min.css" type="text/css"  ></link>
+<link rel="shortcut icon" href="http://www.nhlbi.nih.gov/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="../css/enterprise-1.css" type="text/css" /></link>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> <!--Bootstrap -->
+<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.css"> <!-- Font Awesome -->
+<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.min.css">
+
+
+<!-- screen styles for printing -->
+<!--<link rel="stylesheet" media="print" href="../css/enterprise-1.css"/>-->
+
+
+
+<script type="text/javascript" src="../javascript/modernizr.min.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_1.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_2.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_3.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_4.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_5.js"></script>
+<script type="text/javascript">
+	jQuery
+			.extend(
+					Drupal.settings,
+					{
+						"extlink" : {
+							"extClass" : "ext",
+							"extSubdomains" : 0,
+							"extExclude" : "",
+							"extInclude" : "",
+							"extCssExclude" : "",
+							"extCssExplicit" : "",
+							"extAlert" : 0,
+							"extAlertText" : "This link will take you to an external web site.",
+							"mailtoClass" : "mailto"
+						}
+					});
+</script>
+
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Add excape 'esc' button to close the modal -->
+<script type="text/javascript">
+
+    $(function () {
+        $('.modal-dialog').modal({
+            show: false,
+            keyboard: true,
+            backdrop: 'static'
+        });
+    })
+</script>
+<!-- modal window -->
+
+<link rel="stylesheet" href="../DataTables/media/css/jquery.dataTables_themeroller.css" type="text/css"></link>
+<link rel="stylesheet" href="../css/common.css" />
+
+<!-- use if neccessary
+<link rel="stylesheet" href="../css/lookup.css" />
+<link rel="stylesheet" href="../css/jquery.multiselect.css" /> 
+-->
+
+
+
+<!-- To close the window. Work on Safari, not FF -->
+<script language="javascript" type="text/javascript"> 
+function windowClose() { 
+window.open('','_parent',''); 
+window.close();
+} 
+</script>
+
+
+<!-- text size control --> 
+<script type="text/javascript">
+    function zoomin(zlevel) {
+        var _body = parent.parent.document.body;
+
+        if (jQuery.browser.msie) {
+            _body.style.zoom = zlevel;              
+        }
+        else
+        {
+            if (typeof _body.style.MozTransform == "string")    
+                _body.style.MozTransform = "scale(" + (zlevel) + ")";
+            else if (typeof _body.style.zoom == "string")
+                _body.style.zoom = (zlevel*100) + "%";              
+        }
+    }
+</script>
+
+<!-- print control --> 
+<script type="text/javascript">
+function myFunction() {
+    window.print();
+}
+</script>
+
+
+<!-- pop up window for Help Topic -->
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=600,width=750,location=yes,scrollbars=yes,left=10,top=10,resizeable=yes,menubar=0');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+
+<!-- end pop up window for Help Topic -->
+
+
+</head>
+
+<body>
+	
+<div id="container">
+
+
+<!-- Alert Banner -->		
+<header id="banner">
+           
+           
+<div id="banner" class="banner-red"> <!-- pick red, yellow or green -->
+
+<div id="" class="alert-red"> <!--  pick red, yellow or green -->
+<h3 class="banner-heading-red">
+<a href="#" class="banner-heading-link" aria-label="warning sign icon">
+<i class="fa fa-warning" aria-hidden="true"></i>&nbsp;ALERT&nbsp;&nbsp;</a></h3>
+</div>
+
+<div id="" class="banner-content-inside">
+<p class="banner-content-write">&nbsp;&nbsp;NHLBI TPS Report System Offline for Update Friday, 6/3, 12:00 AM to 5:00 AM.&nbsp;<a href="#" aria-label="information sign icon">
+<i class="fa fa-info-circle banner-icon-red" aria-hidden="true"></i></a></p> <!--  pick red, yellow or green -->
+</div>
+
+</div>
+
+</header>
+<!-- Alert end -->
+  
+  
+<!-- header body -->         
+<header id="page-header">
+       
+	<div id="header-wrap">
+	     	
+		<div class="row">
+        
+			<div id="name-and-slogan" class="headersize">
+         
+			<h1 id="site-name"> <a href="" title="Home" id="" rel="home">NHLBI <span>Clinical Dashboard - BETA</span></a></h1>
+        
+        	</div>
+            
+        	<!-- /#name-and-slogan -->
+  
+    		</div>
+	
+     
+    
+    <div class="row">
+    
+		<div class="col-sm-12">
+			
+            <div id="header-links">
+				
+                <nav id="secondary-menu" role="">
+				Welcome <span>Babatunde, Kazeem (NIH/NHLBI) [E]</span> &nbsp;&nbsp;<a href="#" class="fa fa-sign-out fa-lg" aria-label="log out icon" style="color:#000000;text-decoration:none;" title="Log Out"></a><a href="#" style="color:#000000;text-decoration:none;">Log Out</a>
+				</nav>
+
+                
+				<div class="clearfix"></div>
+                
+			</div>
+            
+          </div>
+        
+	</div>
+    
+</div>
+
+
+
+<!-- Zoom size, print and share -->
+    
+    <div class="row">
+    
+		<div class="col-sm-12">
+			
+            <div id="header-links">
+				
+                <nav id="secondary-menu" role="navigation" style="margin-top:;">
+                
+					<div  class="section-support">
+                 
+<p>         
+<a href="Header-dev.html" onclick="myFunction()" style="color:#c0143c;" aria-label="print icon"><i class="fa fa-print fa-lg" title="print" aria-hidden="true"></i></a>
+<!-- <a href="#" title="Share" style="color: #c0143c;"><i class="fa fa-share"  aria-hidden="true"></i></a> --> 
+<a value="Reset" title="A Reset" ONCLICK="zoomin(1.0);" class="zoom-size-small">A</a>
+<a value="Reset" title="A Medium" ONCLICK="zoomin(1.15);" class="zoom-size-medium">A</a>
+<a value="Reset" title="A Larger" ONCLICK="zoomin(1.3);" class="zoom-size-larger">A</a>
+</p>
+       
+                    </div>
+			   	</nav>
+   
+				<div class="clearfix"></div>
+                
+			</div>
+            
+          </div>
+        
+	</div>
+    
+  
+    
+  
+<!-- Zoom size, print and share - end -->
+
+
+</header>
+
+<!-- end header field -->
+
+
+<!-- Begin nav -->
+<header id="navigation">
+
+
+
+
+<div id="navigation"  style="z-index:5;" role="navigation" aria-hidden="true"  aria-label="Main menu">
+
+	<nav id="main-menu">     
+	
+                <div id="" class="tb-megamenu">
+			
+                        <ul  class="tb-megamenu-nav nav" role="menubar">
+                        
+                        <li class="main-menu-a mega-align-left dropdown" role="menuitem" tabindex="0" aria-haspopup="true" aria-hidden="true"> <!-- add active in class to create active menu tab -->
+  
+  
+  <a href="" class="dropdown-toggle">
+  <span class="headline-menutitle">Clinical Dashboard</span> <span class="caret"></span>
+  </a>
+  
+  <div class="dropdown-menu" aria-haspopup="true" aria-hidden="true">
+  
+  	<div class="">
+  
+		<div class="tb-megamenu-row row-fluid" aria-haspopup="true" aria-hidden="true">
+        
+		<div class="tb-megamenu-column-a" aria-haspopup="true" aria-hidden="true">
+         
+		<div class="tb-megamenu-column-inner mega-inner" aria-haspopup="true" aria-hidden="true">
+         
+		<ul class="tb-megamenu-subnav mega-nav" role="menu" aria-haspopup="true" aria-hidden="true">
+  		
+        <li role="menuitem" tabindex="-1">
+        <a href="" type="button" class="" data-toggle="modal" data-target="#modalAbout"> About Clinical Dashboard </a> <br/>
+		</li>
+  
+		<li role="menuitem" tabindex="-1">
+		<a href="" type="button" class="" data-toggle="modal" data-target="#"> Release Notes </a> <br/>
+		</li>
+
+		<li role="menuitem" tabindex="-1">
+		<a href="" class="" data-toggle="modal" data-target="#modalSystem">System Requirements</a>
+		</li>
+  
+		<li role="menuitem" tabindex="-1">
+        <a href="" class="" data-toggle="modal" data-target="#modalUse"> Terms of Use </a>
+        </li>
+
+		<li role="menuitem" tabindex="-1">
+        <a href="#">Exit Clinical Dashboard</a>
+        </li>
+  
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+		<li class=" main-menu-b">
+		<a href="" class="dropdown-toggle">Home <span class="caret"></span></a>
+        </li>
+                            
+		<li  class="main-menu-c">
+		<a href="" class="dropdown-toggle">Register Study<span class="caret"></span></a>
+        </li>
+	
+    	<li  class="main-menu-e">
+        <a href="" class="dropdown-toggle">Search <span class="caret"></span></a>
+        </li>
+
+		<li  class="main-menu-f mega-align-right dropdown">
+		<a href="" class="dropdown-toggle">Help<span class="caret"></span></a>
+  
+		<div class="dropdown-menu">
+  
+		<div class="">
+  
+		<div  class="tb-megamenu-row row-fluid">
+                            
+		<div class="tb-megamenu-column-b">
+                            
+		<div class=" mega-inner clearfix">
+                            
+		<ul class="tb-megamenu-subnav mega-nav">
+  		
+
+		<li>
+        <span class="search-help-text">Search Help</span>
+		<form action="" method="get" id="" accept-charset="UTF-8" class="form-search-help-menu">
+		
+		<div id="custom-search-menu-help-input" class="views-exposed-form">
+        
+		<div class="input-group col-md-12">
+		<input type="text" class="search-menu-help-query form-control" placeholder="" / aria-label="input field" aria-hidden="true">
+                               
+		<span id="custom-remove-menu-help-input">
+		<button class="btn btn-primary" type="button" id="" value="Remove" aria-label="button icon" aria-hidden="true">
+        <a href="" class="icon-remove search-help-icon-button" aria-label="search icon" aria-hidden="true"></a>	
+        </button>
+		</span>
+                
+		</div>
+            
+		</div>
+        
+		</form>
+		</li>
+    
+
+		<li>
+       <a href="popupex.html" onclick="return popitup('popupex.html')">Browse Clinical Dashboard User Guide </a>
+        </li>
+
+		<li>
+        <a href="" type="button" class="" data-toggle="modal" data-target="#modalStarted"> Get Started with Clinical Dashboard </a>
+        </li>
+
+		<li>
+        <a href="https://myitsm.nih.gov/navpage.do" target="_blank" class=""> Contact IT Service Desk </a>
+        </li>
+    
+		<li>
+        <a href="" class=""> Send Feedback about Clinical Dashboard </a> <!-- Set up Feedback in Jira and add the url link in link tag --> 
+        </li>
+  
+		</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+      				
+</div>
+     
+        
+</nav>
+     
+</div>
+
+</header>
+<!-- End nav--> 
+
+<!--optional breadcrumb -->
+<!-- begin breadcrumb --> 
+<header id="breadcrumb">
+           
+  <ol class="breadcrumb">
+    <li><a href="#" title="Home" aria-label="home icon"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+    <li><a href="#" id="breadcrumb-link" style="">Optional Breadcrumbs</a></li>
+    <li><a href="#" id="breadcrumb-link">Show Users</a></li>
+    <li><a href="#" id="breadcrumb-link">Where They Are</a></li>
+    <li id="breadcrumb-link" class="active">In The Workflow</li>        
+  </ol>
+
+</header>
+	<!-- end breadcrumb --> 
+
+    
+   
+<!-- begin body content -->     	
+<section id="content">
+	
+    <div class="row">
+    
+		<div class="col-sm-16">    
+
+            <h1>Clinical Trials</h1> 
+            
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a nulla sodales nisl egestas tincidunt sed ac massa. Suspendisse congue gravida arcu condimentum pharetra. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus eu lectus eu velit euismod scelerisque. Aenean non purus eros. Cras semper diam tellus, at blandit dui aliquet ac. Pellentesque cursus ultrices est.</p>
+            
+            <p>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed turpis lacinia, posuere eros ac, ultrices tellus. Pellentesque sit amet mauris lorem. Phasellus eleifend, odio non semper facilisis, orci elit facilisis sapien, ut fermentum ex lorem non diam. Vestibulum sed accumsan ipsum. Nullam mollis sapien eget mauris porta, sed tincidunt tellus dictum. Donec id mi a turpis feugiat gravida. Proin ut ligula eget ipsum molestie consequat. Ut ut sem malesuada purus volutpat tempor ut nec neque. Morbi non massa sit amet metus molestie pretium. Nulla nec nisl eu dui convallis dignissim. Nulla faucibus diam ut lectus vulputate pulvinar. Pellentesque malesuada porttitor neque, id ullamcorper justo. Duis consequat lacus sed velit tristique, vel semper quam aliquam. Vestibulum mollis libero enim, quis varius turpis lobortis at. Maecenas quis tellus at augue tempor dictum.
+</p>
+<p>
+Nunc laoreet neque quis nunc auctor, a condimentum purus efficitur. Quisque a pharetra mi. In sed pretium nisl. Praesent pulvinar dignissim elit, eget mollis ex consequat in. Vestibulum pulvinar magna eu sem convallis malesuada. Aenean et enim accumsan, mattis lorem sed, pretium lorem. Sed nunc nisl, vulputate et felis at, pretium sagittis ipsum. Etiam tempor ante a ornare aliquet. Nullam ipsum libero, sollicitudin eu dapibus at, commodo ut eros. In porttitor pellentesque rutrum. Sed mollis purus vitae tellus auctor hendrerit. Morbi vitae ante ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum interdum in massa quis molestie. Duis semper ultricies tristique.</p>
+        
+            
+            
+           
+        
+  
+       
+   
+		</div>
+            
+		</div>
+        
+		</section>
+       
+<!-- end body content --> 
+   
+		</div>
+
+
+
+<!-- Modal - Get Started -->
+<!-- Modal HTML -->
+<div id="modalStarted" class="modal fade" aria-label="modal - Description for Get Started with Clinical Dashboard" aria-hidden="true" style="background-color:#EBEBEB;" tabindex="-1">
+
+    <div class="modal-dialog">
+        
+	<div class="modal-content">
+	<div class="modal-header">
+	<div class="white-modal-header">
+   
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button> 
+          
+	<h5 class="modal-title headerfive">Get Started with Clinical Dashborad</h5>
+	</div>
+
+	<h3 class="modal-title headerthree">Get Started with Clinical Dashborad</h3>
+
+	</div>       
+        
+	<div class="modal-body custom-height-modal">
+
+	<ul style="list-style:none">
+         <li><a href="#">Manual (PDF)</a></li>
+         <li><a href="#">Video tutorials</a> </li>
+         <li><a href="#">Training Classes</a></li>
+	</ul>
+
+	</div>
+
+	</div> 
+    
+	</div>
+
+</div>
+<!-- End - Get Started -->
+
+
+<!-- Modal - Help -->
+ <!-- Modal HTML -->
+<div id="modalHelp" class="modal fade" aria-label="modal - Description for Help" aria-hidden="true" style="background-color:#EBEBEB;" tabindex="-1">
+    <div class="modal-dialog">
+        
+	<div class="modal-content" style="">
+        
+	<div class="modal-header">
+     
+	<div class="white-modal-header">
+   
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button> 
+	<h5 class="modal-title headerfive">Clinical Dashboard Help</h5>
+          
+          
+	</div>
+          
+	<div class="black-modal-header"> 
+       
+	<button type="button" class="button-black-modal-left"aria-label="button icon" aria-hidden="true"><i class="fa fa-chevron-left" aria-hidden="true" aria-label="arrow left icon"></i></button>
+	<button type="button" class="button-black-modal-right" aria-label="button icon" aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true" aria-label="arrow right icon"></i> </button> 
+ 
+  	<div id="custom-search-input">
+	<div class="input-group col-md-12">
+    
+	<span class="input-group-btn">	
+	<button class="btn btn-primary" type="button" aria-label="button icon" aria-hidden="true">
+	<i class="fa fa-search" aria-hidden="true" aria-label="search icon"></i>
+	</button>
+	</span>
+	
+	<input type="text" class="search-query form-control" placeholder="Search" aria-label="input field" aria-hidden="true" />
+                               
+	<span id="custom-remove-input">
+	<button class="btn btn-primary" type="button" data-dismiss="modal" aria-label="button icon">
+	<i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button>
+					
+				
+	</span>
+	
+	</div>
+	</div>
+	</div>
+        
+	<h3 class="modal-title headerthree">Clinical Dashboard Help</h3>
+        
+	</div>
+        
+	<div class="modal-body custom-height-modal">
+        
+	<div class="custom-search-list-modal-one">
+        
+        <!-- This is Demo - This wil change to search custom box to dislay search result -->
+	<ul style="list-style:none; width:100px;">
+	   <li style="padding:5px 0px;"><a href="#">Help Topic 1</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 2</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 3</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 4</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 5</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 6</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 7</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 8</a></li>
+	</ul>
+	</div>
+         
+	<div class=""> 
+	<ul style="list-style:none; margin-top:-10px;">
+	   <li style="padding:5px 0px;"><a href="#">Help Topic 9</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 10</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 11</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 12</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 13</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 14</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 15</a></li>
+       <li style="padding:5px 0px;"><a href="#">Help Topic 16</a></li>
+	</ul>
+	</div>
+
+	</div>
+    </div>
+       
+    </div>
+    
+</div>
+<!-- End - Help -->
+
+
+<!-- Modal - About Clinical Dashboard -->
+ <!-- Modal HTML -->
+<div id="modalAbout" class="modal fade" aria-label="Description for About Clinical Dashboard" aria-hidden="true" style="background-color:#EBEBEB;" tabindex="-1">
+    <div class="modal-dialog">
+      
+	<div class="modal-content" style="">
+        
+	<div class="modal-header">
+     
+	<div class="white-modal-header">
+   
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button> 
+	<h5 class="modal-title headerfive">About Clinical Dashboard </h5>
+    
+	</div>
+         
+	<div class="modal-body custom-height-modal" style="text-align:center">
+        
+	<h3 class="modal-title headerthree">Clinical Dashboard </h3>
+
+	<br/><br/>
+	<p>Optional Tagline</p>
+
+	<p>Version Number</p>
+
+
+	<p><img src="../images/ui/images/NHLBI_Standard_Lockup_Logo_Black.png" alt="NHLBI logo and HHS logo" /></p>
+        
+	</div>
+        
+	</div>
+	</div>
+	</div>
+        
+        
+</div>
+<!-- End - ABout Clinical Dashboard -->
+
+
+<!-- Modal - Term of Use -->
+ <!-- Modal HTML -->
+<div id="modalUse" class="modal fade" aria-label="modal - Description for Term of Use" aria-hidden="true" style="background-color:#EBEBEB;" tabindex="-1">
+    <div class="modal-dialog">
+        
+    <div class="modal-content" style="">
+        
+	<div class="modal-header">
+     
+	<div class="white-modal-header">
+   
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button> 
+	<h5 class="modal-title headerfive">Term of Use </h5>
+      
+	</div>
+     
+	<div class="modal-body custom-height-modal">
+        
+	<ul style="list-style:none;">
+	   <li style="padding:5px 0px;"><a href="http://www.nhlbi.nih.gov/about/contact/nhlbi508form" target="_blank">Accessibility <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+       <li style="padding:5px 0px;"><a href="http://www.nhlbi.nih.gov/about/contact/privacy" target="_blank">Privacy <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+       <li style="padding:5px 0px;"><a href="http://www.nhlbi.nih.gov/about/contact/foia" target="_blank">FOIA <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+       <li style="padding:5px 0px;"><a href="#">OIG <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+	</ul>
+
+	</div>  
+        
+	</div>
+        
+	</div>
+	</div>
+    
+</div>
+
+<!-- End - Term of Use -->
+
+
+<!-- System Requirement -->
+ <!-- Modal HTML -->
+<div id="modalSystem" class="modal fade" style="background-color:#EBEBEB;" tabindex="-1"  aria-label="modal - Description for System Requirement" aria-hidden="true">
+    <div class="modal-dialog">
+        
+	<div class="modal-content" style="">
+	<div class="modal-header">
+     
+	<div class="white-modal-header">
+   
+	<button type="button" class="close" data-dismiss="modal" aria-label="button icon" aria-hidden="true"><i class="fa fa-times" aria-label="close icon" aria-hidden="true"></i></button>
+           
+	<h5 class="modal-title headerfive">System Requirement</h5>
+                     
+	</div>
+	
+	<div class="modal-body custom-height-modal" style="text-align:center">
+        
+	<h3 class="modal-title headerthree">Clinical Dashboard </h3>
+
+	<br/><br/>
+	<p>Requires one of the following web browsers to run correctly</p>
+
+	<p>Internet Explorer version 9.0 or higher</p>
+
+	<p>Mozilla Firefox</p>
+	<p>Google Chrome</p>
+
+	<p>Safari</p>
+    
+    <p><a href="supportedBrowsers.html" target="_blank">Additional Informaiton</a></p>
+
+	<br/>
+        
+	<button type="button" class="test" data-dismiss="modal" aria-label="button icon" aria-hidden="true">Test My System</button> 
+  
+	</div>
+ 
+	</div>
+        
+    </div>
+	</div>
+    
+</div>
+
+<!-- End - System Requirement -->
+
+<!-- End Modal Popup Window -->
+
+</body>
+</html>

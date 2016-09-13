@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<title>NHLBI Clinical Dashboard - Supported Web Browsers for NHLBI Websites and Applications</title>
+
+<meta charset="UTF-8" />
+
+<link rel="stylesheet" href="../jquery/jquery-ui-1.10.3.custom/css/smoothness/jquery-ui-1.10.3.custom.min.css" type="text/css"  ></link>
+<link rel="shortcut icon" href="http://www.nhlbi.nih.gov/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="../css/enterprise-1.css" type="text/css" /></link>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> <!--Bootstrap -->
+<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.css"> <!-- Font Awesome -->
+
+
+<!-- screen styles for printing -->
+<!--<link rel="stylesheet" media="print" href="../css/enterprise-1.css"/>-->
+
+
+
+<script type="text/javascript" src="../javascript/modernizr.min.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_1.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_2.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_3.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_4.js"></script>
+<script type="text/javascript" src="../javascript/enterprise_5.js"></script>
+<script type="text/javascript">
+	jQuery
+			.extend(
+					Drupal.settings,
+					{
+						"extlink" : {
+							"extClass" : "ext",
+							"extSubdomains" : 0,
+							"extExclude" : "",
+							"extInclude" : "",
+							"extCssExclude" : "",
+							"extCssExplicit" : "",
+							"extAlert" : 0,
+							"extAlertText" : "This link will take you to an external web site.",
+							"mailtoClass" : "mailto"
+						}
+					});
+</script>
+
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Add excape 'esc' button to close the modal -->
+<script type="text/javascript">
+
+    $(function () {
+        $('.modal-dialog').modal({
+            show: false,
+            keyboard: true,
+            backdrop: 'static'
+        });
+    })
+</script>
+<!-- modal window -->
+
+<link rel="stylesheet" href="../DataTables/media/css/jquery.dataTables_themeroller.css" type="text/css"></link>
+<link rel="stylesheet" href="../css/common.css" />
+
+<!-- use if neccessary
+<link rel="stylesheet" href="../css/lookup.css" />
+<link rel="stylesheet" href="../css/jquery.multiselect.css" /> 
+-->
+
+
+
+<!-- To close the window. Work on Safari, not FF -->
+<script language="javascript" type="text/javascript"> 
+function windowClose() { 
+window.open('','_parent',''); 
+window.close();
+} 
+</script>
+
+
+<!-- text size control --> 
+<script type="text/javascript">
+    function zoomin(zlevel) {
+        var _body = parent.parent.document.body;
+
+        if (jQuery.browser.msie) {
+            _body.style.zoom = zlevel;              
+        }
+        else
+        {
+            if (typeof _body.style.MozTransform == "string")    
+                _body.style.MozTransform = "scale(" + (zlevel) + ")";
+            else if (typeof _body.style.zoom == "string")
+                _body.style.zoom = (zlevel*100) + "%";              
+        }
+    }
+</script>
+
+<!-- print control --> 
+<script type="text/javascript">
+function myFunction() {
+    window.print();
+}
+</script>
+
+
+<!-- pop up window for Help Topic -->
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=600,width=750,location=yes,scrollbars=yes,left=10,top=10,resizeable=yes,menubar=0');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+
+</head>
+
+<body>
+	
+<div id="container">
+
+
+<!-- Alert Banner -->		
+<header id="banner">
+           
+           
+<div id="banner" class="banner-red"> <!-- pick red, yellow or green -->
+
+<div id="" class="alert-red"> <!--  pick red, yellow or green -->
+<h3 class="banner-heading-red">
+<a href="#" class="banner-heading-link">
+<i class="fa fa-warning"></i>&nbsp;ALERT&nbsp;&nbsp;</a></h3>
+</div>
+
+<div id="" class="banner-content-inside">
+<p class="banner-content-write">&nbsp;&nbsp;NHLBI TPS Report System Offline for Update Friday, 6/3, 12:00 AM to 5:00 AM.&nbsp;<a href="">
+<i class="fa fa-info-circle banner-icon-red"></i></a></p> <!--  pick red, yellow or green -->
+</div>
+
+</div>
+
+</header>
+<!-- Alert end -->
+  
+  
+<!-- header body -->         
+<header id="page-header">
+       
+	<div id="header-wrap">
+	     	
+		<div class="row">
+        
+			<div id="name-and-slogan" class="headersize">
+         
+			<h1 id="site-name"> <a href="" title="Home" id="" rel="home">NHLBI <span>Clinical Dashboard - BETA</span></a></h1>
+        
+        	</div>
+            
+        	<!-- /#name-and-slogan -->
+  
+	  </div>
+	
+    
+    <div class="row">
+    
+		<div class="col-sm-12">
+			
+            <div id="header-links">
+				
+                <nav id="secondary-menu" role="">
+				Welcome <span>Babatunde, Kazeem (NIH/NHLBI) [E]</span> &nbsp;&nbsp;<a href="#" class="fa fa-sign-out fa-lg" style="color:#000000;text-decoration:none;" title="Log Out"></a><a href="#" style="color:#000000;text-decoration:none;" title="Log Out">Log Out</a><br />
+				</nav>
+
+                
+				<div class="clearfix"></div>
+                
+			</div>
+            
+      </div>
+        
+	</div>
+    
+</div>
+
+
+
+<!-- Zoom size, print and share -->
+    
+    <div class="row">
+    
+		<div class="col-sm-12">
+			
+            <div id="header-links">
+				
+                <nav id="secondary-menu" class="secondary-menu" role="navigation" style="">
+                
+					<div  class="section-support">
+                 
+<p>         
+<a href="#" title="Print" onclick="myFunction()" style="color:#c0143c;"><i class="fa fa-print fa-lg"></i></a> &nbsp;
+<!-- <a href="#" title="Share" style="color: #c0143c;"><i class="fa fa-share"  aria-hidden="true"></i></a> --> 
+<a value="Reset" title="A Reset" ONCLICK="zoomin(1.0);" class="zoom-size-small">A</a>
+<a value="Reset" title="A Medium" ONCLICK="zoomin(1.15);" class="zoom-size-medium">A</a>
+<a value="Reset" title="A Larger" ONCLICK="zoomin(1.3);" class="zoom-size-larger">A</a>
+</p>
+       
+                    </div>
+			   	</nav>
+   
+				<div class="clearfix"></div>
+                
+			</div>
+            
+      </div>
+        
+	</div>
+  
+<!-- Zoom size, print and share - end -->
+
+
+</header>
+
+<!-- end header field -->
+
+
+<!-- Begin nav -->
+<header id="navigation">
+
+<div id="navigation"  style="z-index:5;">
+
+	<nav id="main-menu" role="navigation">     
+	
+                <div id="" class="tb-megamenu">
+			
+                        <ul  class="tb-megamenu-nav nav">
+                        
+                        <li class="main-menu-a mega-align-left dropdown"> <!-- add active in class to create active menu tab -->
+  
+  
+  <a href="" class="dropdown-toggle">
+  <span class="headline-menutitle">Clinical Dashboard</span> <span class="caret"></span>
+  </a>
+  
+  <div class="dropdown-menu">
+  
+  	<div class="">
+  
+		<div class="tb-megamenu-row row-fluid">
+        
+		<div class="tb-megamenu-column-a">
+         
+		<div class="tb-megamenu-column-inner mega-inner">
+         
+		<ul class="tb-megamenu-subnav mega-nav">
+  		
+        <li>
+        <a href="" type="button" class="" data-toggle="modal" data-target="#modalAbout"> About Clinical Dashboard </a> <br/>
+		</li>
+  
+		<li>
+		<a href="" type="button" class="" data-toggle="modal" data-target="#"> Release Notes </a> <br/>
+		</li>
+
+		<li>
+		<a href="" class="" data-toggle="modal" data-target="#modalSystem">System Requirements</a>
+		</li>
+  
+		<li>
+        <a href="" class="" data-toggle="modal" data-target="#modalUse"> Terms of Use </a>
+        </li>
+
+		<li>
+        <a href="" class="" value="Close this window" onclick="windowClose();">Exit Clinical Dashboard</a>
+        </li>
+  
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+		<li class=" main-menu-b">
+		<a href="" class="dropdown-toggle">Home <span class="caret"></span></a>
+        </li>
+                            
+		<li  class="main-menu-c">
+		<a href="" class="dropdown-toggle">Upload<span class="caret"></span></a>
+        </li>
+	
+    	<li  class="main-menu-e">
+        <a href="" class="dropdown-toggle">Registration <span class="caret"></span></a>
+        </li>
+
+		<li  class="main-menu-f mega-align-right dropdown">
+		<a href="" class="dropdown-toggle">Help<span class="caret"></span></a>
+  
+		<div class="dropdown-menu">
+  
+		<div class="">
+  
+		<div  class="tb-megamenu-row row-fluid">
+                            
+		<div class="tb-megamenu-column-b">
+                            
+		<div class=" mega-inner clearfix">
+                            
+		<ul class="tb-megamenu-subnav mega-nav">
+  		
+
+		<li>
+        <span class="search-help-text">Search Help</span>
+		<form action="" method="get" id="" accept-charset="UTF-8" class="form-search-help-menu">
+		
+		<div id="custom-search-menu-help-input" class="views-exposed-form">
+        
+		<div class="input-group col-md-12">
+		<input type="text" class="search-menu-help-query form-control" placeholder="" />
+                               
+		<span id="custom-remove-menu-help-input">
+		<button class="btn btn-primary" type="button" id="" value="Remove">
+        <a href="" class="icon-remove search-help-icon-button"></a>	
+        </button>
+		</span>
+                
+		</div>
+            
+		</div>
+        
+		</form>
+		</li>
+    
+
+		<li>
+       <a href="popupex.html" onclick="return popitup('test-width.html')">Browse Clinical Dashboard User Guide </a>
+        </li>
+
+		<li>
+        <a href="" type="button" class="" data-toggle="modal" data-target="#modalStarted"> Get Started with Clinical Dashborad </a>
+        </li>
+
+		<li>
+        <a href="" class=""> Contact IT Service Now </a>
+        </li>
+    
+		<li>
+        <a href="" class=""> Send Feedback about Clinical Dashboard </a>
+        </li>
+  
+		</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+      				
+</div>
+     
+        
+</nav>
+     
+</div>
+
+</header>
+<!-- End nav--> 
+
+<!--optional breadcrumb -->
+<!-- begin breadcrumb --> 
+<header id="breadcrumb">
+           
+  <ol class="breadcrumb">
+    <li><a href="#" title="Home"><i class="fa fa-home fa-lg"></i></a></li>
+    <li><a href="#" id="breadcrumb-link" style="">Optional Breadcrumbs</a></li>
+    <li><a href="#" id="breadcrumb-link">Show Users</a></li>
+    <li><a href="#" id="breadcrumb-link">Where Are They</a></li>
+    <li id="breadcrumb-link" class="active">In The Workflow</li>        
+  </ol>
+
+</header>
+	<!-- end breadcrumb --> 
+
+    
+   
+<!-- begin body content -->     	
+<section id="content">
+	
+    <div class="row">
+    
+		<div class="col-sm-16">    
+
+                  
+                             <h1>Supported Web Browsers for NHLBI Websites and Applications</h1>
+                             <p> NHLBI currently supports the following web browsers when accessing  web applications and the public web site. While you may be able to  access NHLBI sites and applications 			using different versions or other browsers, some functionality may  not be available or may not work properly. You can find links to  download NHLBIs supported browsers below. <br />
+                           </p>
+                           
+                           
+                             <table>
+                               <tbody>
+                                 <tr>
+                                   <th><p> Supported Web Browser and Version</p></th>
+                                   <th width="239"><p>Link for External Download</p></th>
+                                 </tr>
+                                 <tr>
+                                   <td><p>Internet Explorer (IE), version 9 or higher</p></td>
+                                   <td><p align="center"><a target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie"> Download</a></p></td>
+                                 </tr>
+                                 <tr>
+                                   <td><p>Mozilla Firefox</p></td>
+                                   <td><p align="center"><a target="_blank" href="https://www.mozilla.org/en-US/firefox/new/">Download</a></p></td>
+                                 </tr>
+                                 <tr>
+                                   <td><p>Google Chrome</p></td>
+                                   <td><p align="center"><a target="_blank" href="https://www.google.com/intl/en/chrome/browser/">Download</a></p></td>
+                                 </tr>
+                               </tbody>
+                             </table>
+                           
+                           
+                           <h2> Internet Explorer Compatibility Mode Settings </h2>
+                           
+                           <p>
+                           To ensure the full functionality of NHLBI applications using Internet Explorer, please use the following guidance 			to turn off compatibility mode.</p>
+                           
+                           
+                           
+                           <ol>
+                          
+                           <li>In the browser, select Tools &gt; Compatibility View Settings to open the settings window.
+                          
+                           <br />
+<br />
+<img src="../images/applications/compatibility_1.png" alt="Compatibility Mode On" width="379" height="449" /></li>
+
+<li>Uncheck the boxes &quot;Display all websites in Compatibility View&quot; and  &quot;Display intranet sites in Compatibility View&quot; if they are not already unchecked.<br />
+<br />
+
+<img src="../images/applications/compatibility_2_highlight.png" alt="Compatibility Mode Off" /></li>
+
+<li>Close the settings window and restart your browser before returning to the web application. </li>
+
+</ol>
+        
+            
+            
+ 
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NHLBI Clinical Dashboard Header Standard</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="http://www.nhlbi.nih.gov/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="../css/enterprise-5.css" type="text/css" /></link>
+  <link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.css"> <!-- Font Awesome -->
+<link rel="stylesheet" href="../font-awesome/font-awesome-4.5.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../DataTables/media/css/jquery.dataTables_themeroller.css" type="text/css"></link>
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+	
+	
+/* For Firefox only - IMPORTANT*/
+@-moz-document url-prefix() {
+.custom-search-input {
+    margin-top: -25px;
+    margin-right: -38px;
+    padding: 0;
+    float: right;
+    height: 15px;
+    width: 225px;
+    }
+}
+
+  </style>
+  
+
+
+<!-- modal window -->
+<script type="text/javascript">
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+
+<!-- pop up window for Help Topic -->
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=600,width=750,location=yes,scrollbars=yes,left=10,top=10,resizeable=yes,menubar=0');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+
+
+<!-- Place Web Analytics tracking code HERE - To collect data, you must copy and paste the Analytics tracking code into the source code on every web page you wish to track. -->
+
+</head>
+<body>
+
+<!-- Alert Banner -->
+
+<!-- <div class="alert alert-warning fade in alert-banner-wrap" role="alert">
+
+<div class="row">
+<div class="col-md-2 alert-banner-left"> 
+
+<span class="alert-text">
+<a href="#" class="alert-text-block" aria-label="warning sign icon">
+<i class="fa fa-warning" aria-hidden="true"></i>&nbsp;ALERT&nbsp;&nbsp;</a></span>
+
+</div>
+
+
+<div class="col-md-10 alert-banner-right">
+
+<span class="alert-content"><a href="#" class=" alert-context-block" aria-label="information sign icon">NHLBI TPS Report System Offline for Update Friday, 6/3, 12:00 AM to 5:00 AM.a&nbsp;
+<i class="fa fa-info-circle icon-red" aria-hidden="true"></i></a>
+</span> 
+
+</div>
+
+
+</div> 
+
+
+</div> -->
+
+<!-- Alert end -->
+     
+<!-- header body -->         
+
+<div class="row background-wide">      
+   
+<div class="col-md-6 header-title"><!-- cover all title name, add logo if need -->
+      
+	 <h1 class=""><a href="" class="" title="Home" id="" rel="home">NHLBI <span>Clinical Dashboard</span></a></h1>
+      
+	</div>
+      
+      
+	<div class="col-md-6 log-title"> <!-- cover all user name and log icon -->
+<p><span class="welcome-log-title">Welcome <span>Babatunde, Kazeem (NIH/NHLBI) [E]</span></span> &nbsp;<a href="#" class=""><span class="fa fa-sign-out fa-lg"></span>Log Out</a></p>
+    
+	</div>
+                
+</div> <!-- row close -->
+
+
+<nav class="navbar navbar-default" style="background-color:#ffffff; border: 1px solid #000; width:100%;;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header header-title">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+     
+<h1><a href="" class="navbar-brand" title="Home" id="" rel="home">NHLBI <span>Clinical Dashboard</span></a></h1>
+         
+         <ul class="icon-control icon-disable">
+
+        <li class="dropdown menutab-hover-right">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="fa fa-cog fa-2x icon-black"></span></a>
+          <ul class="dropdown-menu dropdown-icon menu-c">
+                
+		<li class=""><a href="#" onclick="myFunction()" aria-label="print icon"><span class="fa fa-print fa-lg" title="print" aria-hidden="true"></span> Print</a> <a href="#" class=""><span class="fa fa-sign-out fa-lg"></span> Log Out</a>         
+</li>
+
+          </ul>
+        </li>
+      </ul>
+         
+    </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav menutab-text">
+       
+        <li class="dropdown menutab-hover"> <!-- add active to display current selection -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Clinical Dashboard</strong> <span class="caret"></span></a>
+          <ul class="dropdown-menu arrow-up menutab-bottom menu-a">
+            
+		<li class="menutab-list"><a href="" type="button" class="" data-toggle="modal" data-target="#modalAbout"><span class="listing-text">About Clinical Dashboard</span> </a></li>
+		<li class="menutab-list"><a href="" type="button" class="" data-toggle="modal" data-target="#modalRelease"><span class="listing-text"> Release Notes</span> </a></li>
+		
+        
+        <li class="menutab-list"><a href="" type="button" class="" data-toggle="modal" data-target="#modalSystem"><span class="listing-text">System Requirements</span></a></li>
+        
+        
+		<!--<li class="menutab-list"><a href="" type="button" class="" data-toggle="modal" data-target="#modalTerm"> <span class="listing-text">Terms of Use</span> </a></li> -->
+        
+
+        
+     
+          </ul>
+        </li>
+        
+        <li class="menutab-hover"> <!-- add active to display current selection -->
+		<a href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+		</li>
+        
+        <li class="menutab-hover"> <!-- add active to display current selection -->
+		<a href="#" role="button" aria-haspopup="true" aria-expanded="false">Register Study</a>
+		</li>
+        
+        <li class="menutab-hover"> <!-- add active to display current selection -->
+		<a href="#" role="button" aria-haspopup="true" aria-expanded="false">Search</a>
+		</li>
+        
+<li class="dropdown menutab-hover menutab-hover-right"> <!-- add active to display current selection -->
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+
+<ul class="dropdown-menu arrow-up menutab-bottom menu-b">
+          
+
+<li class="menutab-list"> <!-- add active to display current selection -->
+<a href="#" role="search" aria-haspopup="true" aria-expanded="false"><span class="listing-text">
+Search Help
+
+<div class="input-group custom-search-input">
+<input type="text" name="search" id="search" class="form-control" placeholder="" />
+<span class="input-group-addon" for="search">
+<i class="glyphicon glyphicon-search"></i>
+</span>
+</div>
+
+</span></a>
+     
+</li>
+            
+<li class="menutab-list"><a href="popupex.html" type="button" onclick="return popitup('popupex.html')"><span class="listing-text">Browse Clinical Dashboard User Guide</span> </a></li>
+
+<li class="menutab-list"><a href="" type="button" class="" data-toggle="modal" data-target="#modalStarted"><span class="listing-text">Get Started with Clinical Dashboard</span></a></li>
+
+<li class="menutab-list"><a href="https://myitsm.nih.gov/navpage.do" target="_blank" class=""><span class="listing-text">Contact IT Service Desk</span> </a></li>
+
+<li class="menutab-list"><a href="" class=""><span class="listing-text">Send Feedback about Clinical Dashboard</span> </a></li> 
+<!-- Set up Feedback in Jira or DL account and add the url link in link tag -->
+
+            
+</ul>
+</li>
+     
+      </ul>
+
+      
+    </div><!-- /.navbar-collapse -->    
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+
+
+<!--optional breadcrumb -->
+<!-- begin breadcrumb --> 
+<header id="breadcrumb">
+           
+  <ol class="breadcrumb">
+    <li><a href="#" title="Home" aria-label="home icon"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+    <li><a href="#" id="breadcrumb-link" style="">Optional Breadcrumbs</a></li>
+    <li><a href="#" id="breadcrumb-link">Show Users</a></li>
+    <li><a href="#" id="breadcrumb-link">Where They Are</a></li>
+    <li id="breadcrumb-link" class="active">In The Workflow</li>        
+  </ol>
+
+</header>
+<!-- end breadcrumb --> 
+    
+ 
+<div class="container-fluid text-center">
+    
+<div class="col-md-12 text-left">
+    
+ 
+     
+      
+<h1>Welcome</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+<!-- Modal Window -->
+
+<!-- Modal - About Clinical Dashboard -->
+ <!-- Modal HTML -->
+<div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-label="Description for About Clinical Dashboard">
+  <div class="modal-dialog" role="document" >
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+           <button type="button" class="close fa-2x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title" id="myModalLabel">About Clinical Dashboard</h4>
+        </div>
+        <div class="modal-body custom-height-modal custom-center">
+          	<h3 class="modal-title-block">Clinical Dashboard </h3>
+
+	<br/>
+	<br/><br/>
+	<p>Optional Tagline</p>
+
+	<p>Version Number</p>
+
+
+	<p><img src="../images/ui/images/NHLBI_Standard_Lockup_Logo_Black.png" alt="NHLBI logo and HHS logo"  style="width:100%;" /></p>
+    
+    
+    
+        </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-default modal-mobile-close center-block" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>   
+<!-- End - About Clinical Dashboard -->
+
+
+<!-- Modal -  Release Notes -->
+ <!-- Modal HTML -->
+<div class="modal fade" id="modalRelease" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-label="Description for Release Notes">
+  <div class="modal-dialog" role="document" >
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+           <button type="button" class="close fa-2x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title" id="myModalLabel">Release Notes</h4>
+        </div>
+        <div class="modal-body custom-height-modal custom-right" style="text-align:left;">
+
+<p>Version 3.2<br/>
+August 7, 2016<br/>
+Bug fixes and performance improvements.
+</p>
+
+<p>Version 3.1<br/>
+February 12, 2016<br/>
+Bug fixes and performance improvements.</p>
+
+<p>Version 2.4.1<br/>
+November 11, 2015<br/>
+Bug fixes and performance improvements.</p>
+
+<p>Version 2.4.0<br/>
+October 22, 2015<br/>
+Bug fixes and performance improvements.</p>
+
+<p>Version 2.3<br/>
+September 18, 2015<br/>
+Bug fixes and performance improvements.</p>
+
+<p>Version 2.2<br/>
+April 19, 2015<br/>
+Bug fixes and performance improvements.</p>
+
+<p>Version 2.1<br/>
+April 5, 2015<br/>
+Bug fixes and performance improvements.</p>
+
+<p>Version 1.0<br/>
+January 27, 2015</p>
+
+</div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-default modal-mobile-close center-block" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-- End - Release Notes -->
+
+
+<!-- Modal - Get Started -->
+<!-- Modal HTML -->
+<div class="modal fade" id="modalStarted" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-label="Description for Get Started">
+  <div class="modal-dialog" role="document" >
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+           <button type="button" class="close fa-2x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title" id="myModalLabel">Get Started with Clinical Dashborad </h4>
+        </div>
+        <div class="modal-body custom-height-modal custom-center">
+      
+
+	<ul style="list-style:none">
+         <li><a href="#">Manual (PDF)</a></li>
+         <li><a href="#">Video tutorials</a> </li>
+         <li><a href="#">Training Classes</a></li>
+	</ul>
+        </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-default modal-mobile-close center-block" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+<!-- End - Get Started -->
+
+
+<!-- Modal - Term of Use -->
+ <!-- Modal HTML -->
+<div class="modal fade" id="modalTerm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-label="Description for Term of Use">
+  <div class="modal-dialog" role="document" >
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+           <button type="button" class="close fa-2x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title" id="myModalLabel">Term of Use </h4>
+        </div>
+        <div class="modal-body custom-height-modal custom-center">
+
+	<br/>
+	<ul style="list-style:none;">
+	   <li style="padding:5px 0px;"><a href="http://www.nhlbi.nih.gov/about/contact/nhlbi508form" target="_blank">Accessibility <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+       <li style="padding:5px 0px;"><a href="http://www.nhlbi.nih.gov/about/contact/privacy" target="_blank">Privacy <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+       <li style="padding:5px 0px;"><a href="http://www.nhlbi.nih.gov/about/contact/foia" target="_blank">FOIA <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+       <li style="padding:5px 0px;"><a href="#">OIG <i class="fa fa-external-link" aria-hidden="true" aria-label="external link icon"></i></a></li>
+	</ul>
+
+        </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-default modal-mobile-close center-block" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-- End - Term of Use -->
+
+
+<!-- System Requirement -->
+ <!-- Modal HTML -->
+<!-- Modal -->
+<div class="modal fade" id="modalSystem" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-label="Description for System Requirement">
+  <div class="modal-dialog" role="document" >
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+           <button type="button" class="close fa-2x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title" id="myModalLabel">System Requirement</h4>
+        </div>
+        <div class="modal-body custom-height-modal custom-center">
+          <h3 class="modal-title-block">Clinical Dashboard </h3>
+
+	<br/>
+	<p>Requires one of the following web browsers to run correctly</p>
+
+	<p>Internet Explorer version 9.0 or higher</p>
+
+	<p>Mozilla Firefox</p>
+	<p>Google Chrome</p>
+
+	<p>Safari</p>
+    
+    <p><a href="supportedBrowsers.html" target="_blank">Additional Informaiton</a></p>
+    
+    <br/>
+        
+	<button type="button" class="test-system btn-primary center-block" data-dismiss="modal" aria-label="button icon" aria-hidden="true">Test My System</button>
+    
+    
+        </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-default modal-mobile-close center-block" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-- End - System Requirement -->
+
+<!-- End Modal Window -->
+
+</body>
+</html>
